@@ -53,6 +53,11 @@ input[type='text'] {
   border-bottom-right-radius: 4px;
 }
 
+#result-heading {
+  margin-top: 2rem;
+  margin-left: 5rem;
+}
+
 .meals {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -65,7 +70,7 @@ input[type='text'] {
   position: relative;
   height: 180px;
   width: 180px;
-  text-align: center;
+  justify-self: center;
 }
 
 .meal img {
@@ -133,6 +138,16 @@ input[type='text'] {
   padding: 10px;
   border: 2px #e098 dashed;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .meal {
+    height: 220px;
+    width: 220px;
+  }
 }
 
 @media (max-width: 800px) {
